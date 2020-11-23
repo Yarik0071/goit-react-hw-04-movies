@@ -1,0 +1,37 @@
+.sectionMovieDetails {
+    display: flex;
+    margin: 30px;
+}
+
+.sectionMovieDetails h2 {
+   font-size: 36px;
+}
+.sectionMovieDetails h3 {
+    font-size: 20px;
+}
+
+.sectionMovieDetails p {
+    font-size: 14px;
+}
+
+.sectionMovieDetails ul {
+    list-style: none;
+}
+
+.genresList {
+    line-height: 16px;
+    display: flex;
+}
+
+.genresList li {
+    margin-right: 25px;
+}
+
+.ovirview {
+    width: 500px;
+}
+
+.reviewsList li,
+.castList li {
+margin-bottom: 50px;
+}
