@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import movieAPI from '../services/api.js'
 import { NavLink } from 'react-router-dom'
 
@@ -38,4 +39,10 @@ export default class HomaPage extends Component {
       </>
     );
   }
+}
+
+HomaPage.proptype = {
+  history: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  match: PropTypes.object.isRequired
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import PropTypes from 'prop-types'
 export default class SerchBar extends Component {
     state = {
       query: '',
@@ -25,10 +25,7 @@ export default class SerchBar extends Component {
             <form className="SearchForm" onSubmit={this.handleSubmit}>
               <input
                 type="text"
-                // autoComplete="off"
-                // autoFocus
                 placeholder="Search movie"
-                // value={}
                 onChange={this.handleChange}
               />
 
@@ -39,4 +36,8 @@ export default class SerchBar extends Component {
           </>
         );
     }
+}
+
+SerchBar.proptype = {
+  onSubmit: PropTypes.func.isRequired,
 }

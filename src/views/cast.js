@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import creditsAPI from '../services/api.js'
 
 export default class Cast extends Component {
@@ -31,4 +32,10 @@ export default class Cast extends Component {
           </>
         );
     }
+}
+
+Cast.proptype = {
+  history: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  match: PropTypes.object.isRequired
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import infoAPI from '../services/api.js'
 
 
@@ -31,4 +32,10 @@ export default class Reviews extends Component {
           </div>
         );
     }
+}
+
+Reviews.proptype = {
+  history: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  match: PropTypes.object.isRequired
 }

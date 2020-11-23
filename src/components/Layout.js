@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Appbar from '../components/Appbar.js'
 
 const Layout = ({ children }) => (
@@ -8,5 +9,9 @@ const Layout = ({ children }) => (
     {children}
     </div>
 )
+
+Layout.proptype = {
+    children: PropTypes.element.isRequired,
+  }
 
 export default Layout
